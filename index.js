@@ -185,7 +185,7 @@ app.post("/uu_tien_gan_bien_co_set_entity", (req, res) => {
     return res.status(200).json(uu_tien_gan_bien_co_set_entity)
 })
 
-app.listen(3001, function () {
+app.listen(process.env.PORT || 3001, function () {
     console.log("server listen on port 3001")
 })
 
