@@ -37,6 +37,12 @@ const khong_uu_tien_gan_bien_khong_gan_entity = {
 				"force_assign_variable": 0
             }
         },
+		{
+			"type": "text",
+			"content": {
+				"text": "Message behind Form"
+			}
+		}
     ],
     "set_attributes": {
         "name": "duy dep trai"
@@ -75,10 +81,17 @@ const uu_tien_gan_bien_khong_gan_entity = {
 
                         "entity": null
                     }
-                ],
+				],
 				"force_assign_variable": 1
             }
         },
+		{
+			"type": "text",
+			"content": {
+				"text": "Message behind Form"
+			}
+		}
+
     ],
     "set_attributes": {
         "name": "duy dep trai"
@@ -121,6 +134,12 @@ const khong_uu_tien_gan_bien_co_set_entity = {
 				"force_assign_variable": 0
             }
         },
+		{
+			"type": "text",
+			"content": {
+				"text": "Message behind Form"
+			}
+		}
     ],
     "set_attributes": {
         "name": "duy dep trai"
@@ -163,6 +182,13 @@ const uu_tien_gan_bien_co_set_entity = {
 				"force_assign_variable": 1
             }
         },
+		{
+			"type": "text",
+			"content": {
+				"text": "Message behind Form"
+			}
+		}
+
     ],
     "set_attributes": {
         "name": "duy dep trai"
