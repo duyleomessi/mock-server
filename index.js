@@ -42,6 +42,13 @@ const khong_uu_tien_gan_bien_khong_gan_entity = {
 			"content": {
 				"text": "Message behind Form"
 			}
+		},
+		{
+			"type": "image",
+			"content": {
+				"title": "Thanks For Sharing clean vegetables",
+				"url": "https://gamek.mediacdn.vn/thumb_w/640/2019/7/8/1-15625474669018688730.jpg"
+			}
 		}
     ],
     "set_attributes": {
@@ -90,8 +97,14 @@ const uu_tien_gan_bien_khong_gan_entity = {
 			"content": {
 				"text": "Message behind Form"
 			}
+		},
+		{
+			"type": "image",
+			"content": {
+				"title": "Thanks For Sharing clean vegetables",
+				"url": "https://gamek.mediacdn.vn/thumb_w/640/2019/7/8/1-15625474669018688730.jpg"
+			}
 		}
-
     ],
     "set_attributes": {
         "name": "duy dep trai"
@@ -138,6 +151,13 @@ const khong_uu_tien_gan_bien_co_set_entity = {
 			"type": "text",
 			"content": {
 				"text": "Message behind Form"
+			}
+		},
+		{
+			"type": "image",
+			"content": {
+				"title": "Thanks For Sharing clean vegetables",
+				"url": "https://gamek.mediacdn.vn/thumb_w/640/2019/7/8/1-15625474669018688730.jpg"
 			}
 		}
     ],
@@ -187,8 +207,14 @@ const uu_tien_gan_bien_co_set_entity = {
 			"content": {
 				"text": "Message behind Form"
 			}
+		},
+		{
+			"type": "image",
+			"content": {
+				"title": "Thanks For Sharing clean vegetables",
+				"url": "https://gamek.mediacdn.vn/thumb_w/640/2019/7/8/1-15625474669018688730.jpg"
+			}
 		}
-
     ],
     "set_attributes": {
         "name": "duy dep trai"
