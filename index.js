@@ -221,6 +221,14 @@ const uu_tien_gan_bien_co_set_entity = {
     }
 }
 
+
+const fe_message = require('./fe_data')
+
+app.post("/binary_content", (req, res) => {
+    return res.status(200).json(fe_message)
+})
+
+
 app.post("/khong_uu_tien_gan_bien_khong_gan_entity", (req, res) => {
     return res.status(200).json(khong_uu_tien_gan_bien_khong_gan_entity)
 })
