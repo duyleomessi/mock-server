@@ -235,6 +235,27 @@ const uu_tien_gan_bien_co_set_entity = {
     }
 }
 
+const non_form = {
+    "messages": [
+        {
+            "type": "text",
+            "content": {
+                "text": "Hello from duy dep trai"
+            }
+        },
+        {
+            "type": "image",
+            "content": {
+                "title": "Thanks For Sharing clean vegetables",
+                "url": "https://gamek.mediacdn.vn/thumb_w/640/2019/7/8/1-15625474669018688730.jpg"
+            }
+        }
+    ],
+    "set_attributes": {
+        "name": "duy dep trai"
+    }
+}
+
 const fe_message = require('./fe_data')
 
 app.post("/binary_content", (req, res) => {
@@ -256,6 +277,10 @@ app.post("/khong_uu_tien_gan_bien_co_set_entity", (req, res) => {
 
 app.post("/uu_tien_gan_bien_co_set_entity", (req, res) => {
     return res.status(200).json(uu_tien_gan_bien_co_set_entity)
+})
+
+app.post("/non_form", (req, res) => {
+    return res.status(200).json(non_form)
 })
 
 app.post("/500", (req, res) => {
