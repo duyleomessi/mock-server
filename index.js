@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
+app.use(cors())
 
 const khong_uu_tien_gan_bien_khong_gan_entity = {
     "messages": [
@@ -258,6 +260,8 @@ const non_form = {
 
 const fe_message = require('./fe_data')
 
+const {list, detail1, detail2} = require('./shopee_data')
+
 app.post("/binary_content", (req, res) => {
     return res.status(200).json(fe_message)
 })
@@ -287,6 +291,21 @@ app.post("/500", (req, res) => {
     return res.status(500).json({message: "Api loi 500"})
 })
 
+app.post("/401", (req, res) => {
+    return res.status(401).json({message: "Api loi unauthenticated"})
+})
+
+app.get("/list-product", (req, res) => {
+    return res.status(200).json(list)
+})
+
+app.get("/product/1", (req, res) => {
+    return res.status(200).json(detail1)
+})
+
+app.get("/product/2", (req, res) => {
+    return res.status(200).json(detail2)
+})
 
 app.listen(process.env.PORT || 3001, function () {
     console.log("server listen on port 3001")
