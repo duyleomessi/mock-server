@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const sleep = require('sleep')
 
 app.use(cors())
 
@@ -300,7 +299,7 @@ app.post("/401", (req, res) => {
 })
 
 app.post("/timeout", (req, res) => {
-    sleep.sleep(40)
+    sleep(40)
     return res.status(200).json({"message": "Timeout api"})
 })
 
