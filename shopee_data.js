@@ -1,5 +1,7 @@
 module.exports = {
-    list: [
+    list:
+
+    [
         {
             "id": 1,
             "name": "Áo Nữ Khoét Sâu Quyến Rũ ",
@@ -26,7 +28,12 @@ module.exports = {
         }
     ],
 
-    detail1: {
+
+    detail1:
+
+
+
+        {
         "name": "Áo Nữ Khoét Sâu Quyến Rũ ",
         "original_price": 156000,
         "discount": 78000,

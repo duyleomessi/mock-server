@@ -1,7 +1,10 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const sleep = require('sleep')
+
 app.use(cors())
+
 
 const khong_uu_tien_gan_bien_khong_gan_entity = {
     "messages": [
@@ -261,6 +264,7 @@ const non_form = {
 const fe_message = require('./fe_data')
 
 const {list, detail1, detail2} = require('./shopee_data')
+const { sleep } = require('sleep')
 
 app.post("/binary_content", (req, res) => {
     return res.status(200).json(fe_message)
@@ -293,6 +297,11 @@ app.post("/500", (req, res) => {
 
 app.post("/401", (req, res) => {
     return res.status(401).json({message: "Api loi unauthenticated"})
+})
+
+app.post("/timeout", (req, res) => {
+    sleep.sleep(40)
+    return res.status(200).json({"message": "Timeout api"})
 })
 
 app.get("/list-product", (req, res) => {
