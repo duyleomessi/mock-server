@@ -323,7 +323,7 @@ app.post("/timeout", (req, res) => {
   return res.status(200).json({ message: "Timeout api" });
 });
 
-app.post("/erro-parse-body", (req, res) => {
+app.post("/error-parse-body", (req, res) => {
   const body = req.body;
   return res.status(200).json({ message: "parse body json ok", body });
 });
