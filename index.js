@@ -1,6 +1,13 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const bodyParser = require("body-parser");
+
+// parse application/x-www-form-urlencoded
+// app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
 
 app.use(cors());
 
@@ -314,6 +321,11 @@ app.get("/timeout", (req, res) => {
 app.post("/timeout", (req, res) => {
   sleep(40);
   return res.status(200).json({ message: "Timeout api" });
+});
+
+app.post("/erro-parse-body", (req, res) => {
+  const body = req.body;
+  return res.status(200).json({ message: "parse body json ok", body });
 });
 
 app.get("/list-product", (req, res) => {
